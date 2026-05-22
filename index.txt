@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A Revolução do Iodo Pro | Juliana Falchetti</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+          colors: {
+            iodo: {
+              primary: '#8b5cf6', 
+              primaryHover: '#7c3aed',
+              dark: '#1e1b4b', 
+              slate: '#0f172a',
+              accent: '#f59e0b', 
+              light: '#f5f3ff' 
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #ffffff; color: #0f172a; }
+    
+    .btn-pulse {
+      animation: pulse-gold 2s infinite;
+      transition: all 0.3s ease-in-out;
+    }
+    .btn-pulse:hover { transform: scale(1.05); }
+    @keyframes pulse-gold {
+      0% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7); }
+      70% { box-shadow: 0 0 0 12px rgba(245, 158, 11, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0); }
+    }
+
+    .shape-divider-bottom { position: absolute; bottom: 0; left: 0; width: 100%; overflow: hidden; line-height: 0; transform: rotate(180deg); }
+    .shape-divider-bottom svg { position: relative; display: block; width: calc(100% + 1.3px); height: 50px; }
+    .shape-divider-bottom .shape-fill { fill: #ffffff; }
+
+    .shape-divider-top { position: absolute; top: 0; left: 0; width: 100%; overflow: hidden; line-height: 0; }
+    .shape-divider-top svg { position: relative; display: block; width: calc(100% + 1.3px); height: 50px; }
+    .shape-divider-top .shape-fill { fill: #f5f3ff; }
+    
+    .faq-answer { display: none; }
+    .faq-item.active .faq-answer { display: block; }
+    .faq-item.active .faq-icon { transform: rotate(180deg); }
+  </style>
+</head>
+<body class="overflow-x-hidden antialiased">
+
+  <header class="relative bg-gradient-to-br from-iodo-dark via-iodo-slate to-black text-white pt-20 pb-32">
+    <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
+    <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+      
+      <div class="inline-flex items-center gap-2 bg-iodo-primary/20 border border-iodo-primary/40 px-4 py-2 rounded-full text-iodo-primary text-xs font-bold uppercase tracking-widest mb-8 shadow-sm">
+        <i data-lucide="microscope" class="w-4 h-4"></i> Formação Exclusiva para Profissionais de Saúde
+      </div>
+      
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+        Domine a Terapia com <span class="text-iodo-accent">Iodo + Iodeto</span> baseada em evidências científicas 🔬
+      </h1>
+      
+      <p class="text-lg md:text-xl text-slate-300 mb-10 max-w-3xl mx-auto font-medium">
+        Vença a iodofobia e aprenda a aplicação clínica real para tireoide, hormônios e metabolismo com quem já formou mais de <strong>10 mil alunos</strong>.
+      </p>
+      
+      <div class="flex flex-col items-center gap-4">
+        <a href="https://pay.hotmart.com/X103528878H?sck=HOTMART_PRODUCT_PAGE&off=l3qgm8qb&hotfeature=32&_gl=1*1hiarlo*_gcl_au*MTk4MjU1MzcxMy4xNzc5MzY4OTQ2*_ga*MTkyMTgzMjkwMC4xNzc5MzYzODcy*_ga_GQH2V1F11Q*czE3Nzk0NTUyNTckbzMkZzEkdDE3Nzk0NTUzMTQkajMkbDAkaDY3MDA5OTcwNw.." 
+           class="btn-pulse bg-iodo-accent text-iodo-dark text-xl md:text-2xl font-extrabold px-10 py-5 rounded-2xl shadow-2xl uppercase tracking-tighter w-full md:w-auto text-center border-b-4 border-amber-700">
+          Quero me Especializar Agora ➔
+        </a>
+        <p class="text-sm text-slate-400 flex items-center gap-2 font-semibold mt-2">
+          <i data-lucide="check-circle" class="w-4 h-4 text-iodo-primary"></i> Acesso Imediato • Conteúdo Nível Pós-Graduação
+        </p>
+      </div>
+    </div>
+
+    <div class="shape-divider-bottom">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+  </header>
+
+  <section class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold text-iodo-slate mb-6 leading-tight">
+            Você ainda tem medo do Iodo? <span class="text-iodo-primary">A Iodofobia está limitando seus resultados clínicos.</span> 🩺
+          </h2>
+          <ul class="space-y-6">
+            <li class="flex items-start gap-4 text-slate-700 bg-slate-50 p-4 rounded-xl border border-slate-100">
+              <i data-lucide="alert-triangle" class="text-red-500 w-7 h-7 shrink-0 mt-1"></i>
+              <span class="font-medium">Sente insegurança na hora de prescrever doses acima da RDA?</span>
+            </li>
+            <li class="flex items-start gap-4 text-slate-700 bg-slate-50 p-4 rounded-xl border border-slate-100">
+              <i data-lucide="help-circle" class="text-red-500 w-7 h-7 shrink-0 mt-1"></i>
+              <span class="font-medium">Não sabe como manejar os co-fatores necessários para evitar o efeito Wolff-Chaikoff?</span>
+            </li>
+            <li class="flex items-start gap-4 text-slate-700 bg-slate-50 p-4 rounded-xl border border-slate-100">
+              <i data-lucide="skull" class="text-red-500 w-7 h-7 shrink-0 mt-1"></i>
+              <span class="font-medium">Tem receio de causar uma tireoidite de Hashimoto ou piorar quadros de autoimunidade?</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="bg-iodo-light p-8 md:p-10 rounded-3xl border-2 border-iodo-primary/20 shadow-xl">
+          <h3 class="text-2xl font-bold text-iodo-dark mb-4">A Revolução Prática 📚</h3>
+          <p class="text-slate-700 leading-relaxed mb-4">
+            A maioria dos profissionais baseia sua conduta em estudos obsoletos da década de 40. No <strong>A Revolução do Iodo Pro</strong>, nós olhamos para a bioquímica moderna.
+          </p>
+          <p class="text-slate-700 leading-relaxed font-semibold">
+            Você não vai apenas "dar iodo". Você vai entender o mecanismo celular.
+          </p>
+          <p class="text-slate-700 leading-relaxed mt-4">
+            Vou te entregar o protocolo seguro de Iodo + Iodeto para tratar desde cistos mamários até deficiências cognitivas e fadiga crônica, com o respaldo de quem vive isso na prática clínica internacional.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-iodo-dark text-white relative">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center gap-12">
+        <div class="w-full md:w-1/3">
+          <div class="relative">
+            <div class="absolute inset-0 bg-iodo-accent rounded-3xl transform rotate-6 scale-105 opacity-20"></div>
+            <img src="https://dra-juliana-falchetti.framer.website/juliana_falchetti.jpg" alt="Juliana Falchetti" class="relative rounded-3xl shadow-2xl border-2 border-white/10 w-full object-cover grayscale-[30%]">
+          </div>
+        </div>
+        <div class="w-full md:w-2/3">
+          <h3 class="text-iodo-accent font-bold uppercase tracking-widest text-sm mb-2">Sua Mentora</h3>
+          <h2 class="text-4xl font-extrabold mb-6">Juliana Falchetti</h2>
+          <p class="text-lg text-slate-300 mb-6 leading-relaxed">
+            Oi, eu sou <strong>Juliana Falchetti</strong>, nutricionista funcional, membro da Ordem dos Nutricionistas de Portugal. Com mais de <strong>18 anos de experiência</strong>, sou especialista em abordagem terapêutica integrativa com ênfase em NUTRIGENÉTICA.
+          </p>
+          <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-slate-100">
+            <li class="flex items-center gap-2"><i data-lucide="award" class="w-4 h-4 text-iodo-accent"></i> +10 Mil Alunos Formados</li>
+            <li class="flex items-center gap-2"><i data-lucide="globe" class="w-4 h-4 text-iodo-accent"></i> Atuação em Portugal e Brasil</li>
+            <li class="flex items-center gap-2"><i data-lucide="dna" class="w-4 h-4 text-iodo-accent"></i> Foco em Nutrigenética</li>
+            <li class="flex items-center gap-2"><i data-lucide="stethoscope" class="w-4 h-4 text-iodo-accent"></i> Abordagem Anti-Aging</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-5xl font-extrabold text-iodo-slate mb-16">O que você vai dominar:</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="p-8 bg-iodo-light rounded-2xl border border-iodo-primary/10 text-left">
+          <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mb-6 shadow-sm">
+            <i data-lucide="book-open" class="w-6 h-6 text-iodo-primary"></i>
+          </div>
+          <h4 class="text-xl font-bold mb-3">Evidência Científica</h4>
+          <p class="text-sm text-slate-600">O conteúdo mais profundo sobre Iodo+Iodeto em língua portuguesa, filtrado pela melhor evidência disponível hoje.</p>
+        </div>
+        
+        <div class="p-8 bg-iodo-light rounded-2xl border border-iodo-primary/10 text-left">
+          <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mb-6 shadow-sm">
+            <i data-lucide="layers" class="w-6 h-6 text-iodo-primary"></i>
+          </div>
+          <h4 class="text-xl font-bold mb-3">Protocolos de Doses</h4>
+          <p class="text-sm text-slate-600">Entenda a diferença entre Iodo nascente, SSKI, Solução de Lugol e como manejar miligramagem com segurança.</p>
+        </div>
+
+        <div class="p-8 bg-iodo-light rounded-2xl border border-iodo-primary/10 text-left">
+          <div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center mb-6 shadow-sm">
+            <i data-lucide="zap" class="w-6 h-6 text-iodo-primary"></i>
+          </div>
+          <h4 class="text-xl font-bold mb-3">Co-fatores Críticos</h4>
+          <p class="text-sm text-slate-600">Selênio, Magnésio, Vitaminas do complexo B e o protocolo de suporte adrenal para evitar crises de desintoxicação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-iodo-light relative">
+    <div class="shape-divider-top">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill" fill="#ffffff"></path>
+        </svg>
+    </div>
+    
+    <div class="max-w-5xl mx-auto px-6 mt-12">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-iodo-slate">Desenvolvido para Profissionais <span class="text-iodo-primary">exigentes.</span></h2>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center">
+          <div class="w-14 h-14 bg-indigo-50 text-iodo-primary rounded-full flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="timer" class="w-7 h-7"></i>
+          </div>
+          <h4 class="font-bold text-lg mb-2">Conteúdo Direto</h4>
+          <p class="text-xs text-slate-500 leading-relaxed">Sei que sua agenda é lotada. Aulas focadas na aplicação clínica, sem "encheção de linguiça" acadêmica desnecessária.</p>
+        </div>
+        
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center">
+          <div class="w-14 h-14 bg-indigo-50 text-iodo-primary rounded-full flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="shield-check" class="w-7 h-7"></i>
+          </div>
+          <h4 class="font-bold text-lg mb-2">Segurança Jurídica</h4>
+          <p class="text-xs text-slate-500 leading-relaxed">Baseamos tudo em evidência científica sólida para que você tenha tranquilidade ao aplicar o método em seu consultório.</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center">
+          <div class="w-14 h-14 bg-indigo-50 text-iodo-primary rounded-full flex items-center justify-center mx-auto mb-6">
+            <i data-lucide="graduation-cap" class="w-7 h-7"></i>
+          </div>
+          <h4 class="font-bold text-lg mb-2">Diferenciação</h4>
+          <p class="text-xs text-slate-500 leading-relaxed">Saia da média. Poucos profissionais dominam este tema, tornando-o uma referência em saúde integrativa e nutrigenética.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="oferta" class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="bg-iodo-slate rounded-3xl p-8 md:p-16 text-center text-white shadow-2xl relative overflow-hidden border-4 border-iodo-accent/20">
+        
+        <div class="absolute -top-24 -left-24 w-64 h-64 bg-iodo-primary/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-iodo-accent/10 rounded-full blur-3xl"></div>
+
+        <div class="relative z-10">
+          <h2 class="text-3xl font-extrabold mb-4">Invista na sua excelência clínica.</h2>
+          <p class="text-slate-400 mb-10 max-w-xl mx-auto">Tenha acesso vitalício ao conteúdo mais profundo sobre Iodo+Iodeto disponível em língua portuguesa.</p>
+          
+          <div class="flex justify-center items-end gap-2 mb-2">
+            <span class="text-xl text-slate-400 font-medium">4x de</span>
+            <span class="text-6xl font-black text-iodo-accent">R$ 108,60</span>
+          </div>
+          <p class="text-sm text-slate-400 mb-8 font-medium">ou R$ 399,00 à vista</p>
+
+          <a href="https://pay.hotmart.com/X103528878H?sck=HOTMART_PRODUCT_PAGE&off=l3qgm8qb&hotfeature=32&_gl=1*1hiarlo*_gcl_au*MTk4MjU1MzcxMy4xNzc5MzY4OTQ2*_ga*MTkyMTgzMjkwMC4xNzc5MzYzODcy*_ga_GQH2V1F11Q*czE3Nzk0NTUyNTckbzMkZzEkdDE3Nzk0NTUzMTQkajMkbDAkaDY3MDA5OTcwNw.." 
+             class="block w-full md:w-3/4 mx-auto btn-pulse bg-iodo-accent text-iodo-dark text-xl md:text-2xl font-extrabold px-8 py-6 rounded-2xl shadow-xl uppercase tracking-tighter border-b-4 border-amber-700 transition-colors">
+            Garantir Minha Vaga Agora ➔
+          </a>
+          
+          <div class="flex items-center justify-center gap-6 mt-10">
+            <img src="https://logospng.org/download/hotmart/logo-hotmart-256.png" alt="Hotmart" class="h-8 opacity-60 grayscale hover:grayscale-0 transition-all">
+            <div class="flex items-center gap-2 text-slate-400 text-sm">
+              <i data-lucide="shield-check" class="w-5 h-5 text-green-500"></i>
+              <span>Garantia de 7 dias</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-slate-50">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-3xl font-extrabold text-center text-iodo-slate mb-12 font-serif">Consultas Técnicas (FAQ)</h2>
+      
+      <div class="space-y-4">
+        <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden cursor-pointer" onclick="this.classList.toggle('active')">
+          <div class="flex justify-between items-center p-5">
+            <h4 class="font-bold text-slate-800">1. O curso oferece certificado?</h4>
+            <i data-lucide="chevron-down" class="faq-icon text-slate-400 transition-transform"></i>
+          </div>
+          <div class="faq-answer px-5 pb-5 text-slate-600 text-sm">Sim, ao finalizar todos os módulos, você recebe um certificado de conclusão com a carga horária detalhada.</div>
+        </div>
+
+        <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden cursor-pointer" onclick="this.classList.toggle('active')">
+          <div class="flex justify-between items-center p-5">
+            <h4 class="font-bold text-slate-800">2. Sou nutricionista, posso prescrever as doses ensinadas?</h4>
+            <i data-lucide="chevron-down" class="faq-icon text-slate-400 transition-transform"></i>
+          </div>
+          <div class="faq-answer px-5 pb-5 text-slate-600 text-sm">Abordamos a legislação e os limites de prescrição para cada categoria profissional (médicos, nutricionistas, etc.), garantindo que você atue dentro da ética e legalidade.</div>
+        </div>
+
+        <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden cursor-pointer" onclick="this.classList.toggle('active')">
+          <div class="flex justify-between items-center p-5">
+            <h4 class="font-bold text-slate-800">3. O conteúdo é atualizado?</h4>
+            <i data-lucide="chevron-down" class="faq-icon text-slate-400 transition-transform"></i>
+          </div>
+          <div class="faq-answer px-5 pb-5 text-slate-600 text-sm">Sim, baseamos a formação em publicações recentes e na revisão constante da literatura sobre endocrinologia e nutrição funcional.</div>
+        </div>
+
+        <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden cursor-pointer" onclick="this.classList.toggle('active')">
+          <div class="flex justify-between items-center p-5">
+            <h4 class="font-bold text-slate-800">4. Por quanto tempo tenho acesso?</h4>
+            <i data-lucide="chevron-down" class="faq-icon text-slate-400 transition-transform"></i>
+          </div>
+          <div class="faq-answer px-5 pb-5 text-slate-600 text-sm">O acesso é vitalício. Você pode ver e rever as aulas sempre que surgir uma dúvida com um paciente em consultório.</div>
+        </div>
+
+        <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden cursor-pointer" onclick="this.classList.toggle('active')">
+          <div class="flex justify-between items-center p-5">
+            <h4 class="font-bold text-slate-800">5. Existe suporte para dúvidas?</h4>
+            <i data-lucide="chevron-down" class="faq-icon text-slate-400 transition-transform"></i>
+          </div>
+          <div class="faq-answer px-5 pb-5 text-slate-600 text-sm">Sim, temos uma área de comentários abaixo de cada aula onde nossa equipe e a Juliana respondem dúvidas técnicas dos alunos.</div>
+        </div>
+
+        <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden cursor-pointer" onclick="this.classList.toggle('active')">
+          <div class="flex justify-between items-center p-5">
+            <h4 class="font-bold text-slate-800">6. Aborda o tratamento de Hashimoto?</h4>
+            <i data-lucide="chevron-down" class="faq-icon text-slate-400 transition-transform"></i>
+          </div>
+          <div class="faq-answer px-5 pb-5 text-slate-600 text-sm">Este é um dos pilares. Ensinamos como preparar o terreno biológico antes de introduzir iodo em pacientes autoimunes.</div>
+        </div>
+
+        <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden cursor-pointer" onclick="this.classList.toggle('active')">
+          <div class="flex justify-between items-center p-5">
+            <h4 class="font-bold text-slate-800">7. Como recebo o material?</h4>
+            <i data-lucide="chevron-down" class="faq-icon text-slate-400 transition-transform"></i>
+          </div>
+          <div class="faq-answer px-5 pb-5 text-slate-600 text-sm">Imediatamente após a confirmação do pagamento, você recebe os dados de login no seu e-mail cadastrado na Hotmart.</div>
+        </div>
+
+        <div class="faq-item bg-white border border-slate-200 rounded-xl overflow-hidden cursor-pointer" onclick="this.classList.toggle('active')">
+          <div class="flex justify-between items-center p-5">
+            <h4 class="font-bold text-slate-800">8. Preciso de algum conhecimento prévio?</h4>
+            <i data-lucide="chevron-down" class="faq-icon text-slate-400 transition-transform"></i>
+          </div>
+          <div class="faq-answer px-5 pb-5 text-slate-600 text-sm">Sim, é recomendado que você seja graduado ou estudante de graduação na área da saúde, pois utilizamos terminologia técnica.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-iodo-slate py-12 text-center text-slate-500 text-sm">
+    <div class="max-w-4xl mx-auto px-6 border-t border-white/5 pt-8">
+      <p class="mb-4">Este produto é destinado exclusivamente a profissionais de saúde. O uso das informações aqui contidas deve respeitar os limites de atuação de cada conselho de classe profissional.</p>
+      <p>&copy; 2024 - A Revolução do Iodo Pro. Desenvolvido por Juliana Falchetti.</p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
